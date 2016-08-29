@@ -113,13 +113,13 @@ git checkout ${COMBOAMI_BRANCH}
 echo "python datastax_ami/ds4_motd.py" > /home/ubuntu/.profile
 
 # JAVA_HOME and HADOOP_HOME for the ubuntu user
-echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" >> /home/ubuntu/.profile
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /home/ubuntu/.profile
 echo "export HADOOP_HOME=/usr/share/dse/hadoop" >> /home/ubuntu/.profile
 chmod 644 /home/ubuntu/.profile
 
 # JAVA_HOME and HADOOP_HOME for root
 sudo bash -c \
-    'echo "export JAVA_HOME=/usr/lib/jvm/java-7-oracle" > /root/.profile'
+    'echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" > /root/.profile'
 sudo bash -c \
     'echo "export HADOOP_HOME=/usr/share/dse/hadoop" >> /root/.profile'
 sudo chown root:root /root/.profile
