@@ -158,7 +158,7 @@ cat << EOF > /tmp/start-ami-script.sh
 ### END INIT INFO
 
 # Make sure variables get set
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 # Setup system properties
 echo 1 | sudo tee /proc/sys/vm/overcommit_memory
